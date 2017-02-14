@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
 import  { View, Text } from 'react-native';
+import { Header } from './components/common';
 
-const App = () => {
-  return (
-    <View>
-      <Text>Authentication App</Text>
-    </View>
-  );
+class App extends Component {
+  render() {
+    return (
+      <View>
+        <Header title={'Authentication'} />
+        <Text>Authentication App</Text>
+      </View>
+    );
+  }
 }
 
 export default App;
